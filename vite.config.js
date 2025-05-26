@@ -7,4 +7,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['@electric-sql/pglite'],
   },
+  build: {
+    target: 'esnext', // ✅ Supports top-level await
+  }
 })
